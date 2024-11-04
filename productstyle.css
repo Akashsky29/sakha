@@ -1,0 +1,77 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
+*{
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    border: none;
+    text-decoration: none;
+    text-transform: capitalize;
+    transition: 0.1s linear;
+   
+}
+
+.product-container{
+    background-size: cover;
+    background: url(/image/bg2.jpg) ;
+    padding: 15px 9%;  
+}
+.product-container .Heading{
+    text-align: center;
+    margin-top: -60px;
+    padding-bottom: 60px;
+    color: #444044;
+    text-shadow: 0 5px 5px rgb(255, 198, 198) ;
+    font-size: 50px;
+}
+.product-container .box-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(270px, 1fr));
+    gap: 25px;
+}
+.product-container .box-container .box{
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 2) ;
+    border-radius: 5px;
+    background: #fff;
+    text-align: center;
+    padding: 0px 0px;
+}
+.product-container .box-container .box img{
+    height: 80%;
+    width: 100%;
+}
+.product-container .box-container .box h3{
+background-color: #fff;
+color: #1d0e0e;
+font-size: 22px;
+padding: 5px 0;
+}
+
+.product-container .box-container .box .btn{
+margin-top: 2px;
+display: inline-block;
+background: #333;
+color: #fff;
+font-size: 15px;
+border-radius: 5px;
+padding: 5px 15px;               
+}
+
+.product-container .box-container .box .btn:hover{
+    letter-spacing: 1px;
+}
+
+.product-container .box-container .box:hover{
+    box-shadow: 0 10px 15px rgba(0, 0, 0, 3);
+    transform: scale(1.03);
+    transition-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+@media(max-width:768px){
+    .product-container{
+        padding: 20px; ;
+    }
+}
+
+
+
